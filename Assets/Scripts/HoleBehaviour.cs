@@ -19,7 +19,6 @@ public class HoleBehaviour : MonoBehaviour {
     void OnTriggerEnter()
     {
         Canvas canvasfin = GameObject.FindGameObjectWithTag("CanvasFin").GetComponent<Canvas>();
-        GameObject.FindGameObjectWithTag("SonFin").GetComponent<AudioSource>().Stop();
         canvasfin.GetComponentInChildren<Text>().text = "Score : "+player.nbWagon;
         canvasfin.enabled = true;
         

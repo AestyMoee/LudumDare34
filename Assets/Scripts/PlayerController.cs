@@ -50,8 +50,7 @@ public class PlayerController : MonoBehaviour {
 
         lastWagon = newWagon;
         lstWagon.Add(lastWagon);
-
-        sonnet.Play();
+        
         nbWagon++;
         speed += 5;
 
